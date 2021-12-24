@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>shank&#39;s life</title>
-        <link>http://localhost/</link>
+        <link>https://life.shankisme.com/</link>
         <description>Recent content on shank&#39;s life</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Fri, 17 Dec 2021 17:09:46 +0800</lastBuildDate><atom:link href="http://localhost/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 17 Dec 2021 17:09:46 +0800</lastBuildDate><atom:link href="https://life.shankisme.com/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>聊一聊我为什么要创建这个博客</title>
-        <link>http://localhost/p/%E8%81%8A%E4%B8%80%E8%81%8A%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%88%9B%E5%BB%BA%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2/</link>
+        <link>https://life.shankisme.com/p/%E8%81%8A%E4%B8%80%E8%81%8A%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%88%9B%E5%BB%BA%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2/</link>
         <pubDate>Fri, 17 Dec 2021 17:09:46 +0800</pubDate>
         
-        <guid>http://localhost/p/%E8%81%8A%E4%B8%80%E8%81%8A%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%88%9B%E5%BB%BA%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2/</guid>
-        <description>&lt;img src="http://localhost/p/%E8%81%8A%E4%B8%80%E8%81%8A%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%88%9B%E5%BB%BA%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2/1.jpg" alt="Featured image of post 聊一聊我为什么要创建这个博客" /&gt;&lt;h2 id=&#34;我换主题咯&#34;&gt;我换主题咯&lt;/h2&gt;
+        <guid>https://life.shankisme.com/p/%E8%81%8A%E4%B8%80%E8%81%8A%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%88%9B%E5%BB%BA%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2/</guid>
+        <description>&lt;img src="https://life.shankisme.com/p/%E8%81%8A%E4%B8%80%E8%81%8A%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%88%9B%E5%BB%BA%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2/1.jpg" alt="Featured image of post 聊一聊我为什么要创建这个博客" /&gt;&lt;h2 id=&#34;我换主题咯&#34;&gt;我换主题咯&lt;/h2&gt;
 &lt;p&gt;前段时间，我迁移了曾经尘封的&lt;a class=&#34;link&#34; href=&#34;https://shankisme.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;tech blog&lt;/a&gt;。 换装后，简约、黑白、少即是多的风格，让我每次看发布的文章都能心满意足地离开，在上面写写技术上的奇思妙想还是非常不错的。但你发现了吗？它有些单调，以至于每次想写点有生活气息的文字，我有些不忍提笔&amp;hellip;&amp;hellip;生活是colorful的，黑白两极的简约风格，我实在想不到生活上有什么事能搭上边。&lt;/p&gt;
 &lt;p&gt;那什么样的主题能和生活搭上边呢？我第一个想到的是卡片式主题，顾名思义，模块以卡片的形式被分成一块一块的，可玩性强，而且明亮、美观、整洁，我还想加点淡雅的元素，插件、shortcode要丰富，于是我发现了&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -44,11 +44,11 @@
         </item>
         <item>
         <title>Markdown Syntax Guide</title>
-        <link>http://localhost/p/markdown-syntax-guide/</link>
+        <link>https://life.shankisme.com/p/markdown-syntax-guide/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost/p/markdown-syntax-guide/</guid>
-        <description>&lt;img src="http://localhost/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
+        <guid>https://life.shankisme.com/p/markdown-syntax-guide/</guid>
+        <description>&lt;img src="https://life.shankisme.com/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
 &lt;h2 id=&#34;headings&#34;&gt;Headings&lt;/h2&gt;
 &lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
 &lt;h1 id=&#34;h1&#34;&gt;H1&lt;/h1&gt;
@@ -191,10 +191,10 @@
         </item>
         <item>
         <title>Rich Content</title>
-        <link>http://localhost/p/rich-content/</link>
+        <link>https://life.shankisme.com/p/rich-content/</link>
         <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost/p/rich-content/</guid>
+        <guid>https://life.shankisme.com/p/rich-content/</guid>
         <description>&lt;p&gt;Hugo ships with several &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
@@ -295,11 +295,11 @@
         </item>
         <item>
         <title>Placeholder Text</title>
-        <link>http://localhost/p/placeholder-text/</link>
+        <link>https://life.shankisme.com/p/placeholder-text/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost/p/placeholder-text/</guid>
-        <description>&lt;img src="http://localhost/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
+        <guid>https://life.shankisme.com/p/placeholder-text/</guid>
+        <description>&lt;img src="https://life.shankisme.com/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
 &lt;p&gt;Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Exierant elisi ambit vivere dedere&lt;/li&gt;
@@ -326,10 +326,10 @@
         </item>
         <item>
         <title>Math Typesetting</title>
-        <link>http://localhost/p/math-typesetting/</link>
+        <link>https://life.shankisme.com/p/math-typesetting/</link>
         <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost/p/math-typesetting/</guid>
+        <guid>https://life.shankisme.com/p/math-typesetting/</guid>
         <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
 &lt;p&gt;In this example we will be using &lt;a class=&#34;link&#34; href=&#34;https://katex.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;KaTeX&lt;/a&gt;&lt;/p&gt;
@@ -358,11 +358,11 @@ $$&lt;/p&gt;</description>
         </item>
         <item>
         <title>Emoji Support</title>
-        <link>http://localhost/p/emoji-support/</link>
+        <link>https://life.shankisme.com/p/emoji-support/</link>
         <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost/p/emoji-support/</guid>
-        <description>&lt;img src="http://localhost/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
+        <guid>https://life.shankisme.com/p/emoji-support/</guid>
+        <description>&lt;img src="https://life.shankisme.com/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
 &lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/functions/emojify/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt; function can be called directly in templates or &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;
