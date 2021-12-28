@@ -442,15 +442,77 @@ b站上也有视频，感兴趣的看看：
 <p>相对于股票，基金已经耗费我较少的精力了，我只需要早上九点半上班路上看一下开盘形式，心里落个底，中午午休看一下，下午三点出头再观察下，决定要不要加仓或者卖出一部分。
 但是人嘛，总会有感性大于理性的时候，比如某时刻，一看某基金连涨两三天了，就会想着加仓追高，或者卖出一部分落地为安，我想了想，最扯淡的是，这基本是由我的心情心态决定的，之前强迫自己坚守的基金交易规则在脑海里烟消云散了，基金一变动，我又要增加或减少其他种类的基金，只为了做到资金分布合理。</p>
 <p>好了，这么一连串操作下来，我一天在基金上的的精力开销还是很多的，而且非常有可能落的“一顿操作猛如虎，一看收益负2.5%”的下场&hellip;&hellip;</p>
-<p>那么有没有一种办法能减少这种无意义的精力损耗呢？</p>
-<h3 id="注意力分配">注意力分配</h3>
-<p>我发现自己平时更多地关注消费、新能源板块的股票型基金基金，因为它们买的多，并且风险也高，涨跌平均两个点小心脏有点受不了，所以这类高风险基金我一般会花更多时间关注。而像天弘的债基，我知道它会慢慢涨，出现半个微笑曲线时考虑加仓就对了；而余额宝朝朝宝的收益，我看都不看&hellip;&hellip;</p>
+<p>那么有没有一种办法能减少这种无意义的精力损耗呢？
+为了回答这个问题，需要先反思自己的注意力怎么分配的，出现什么情况我会更加关注它们？</p>
+<h3 id="注意力分配--关注点">注意力分配 &amp;&amp; 关注点</h3>
+<p>我发现自己平时更多地关注消费、新能源板块的股票型基金基金，因为它们买的多，并且风险也高，涨跌日均三个点小心脏有点受不了，所以这类高风险基金我一般会花更多时间关注。而像天弘的债基，我知道它会慢慢涨，出现半个微笑曲线时考虑加仓就对了，同时也是定投最适合的产品；而余额宝朝朝宝的收益，我看都不看&hellip;&hellip;</p>
 <p>所以精力占比会有个大概分布：</p>
 <ul>
 <li>低风险（余额宝、朝朝宝）： 1%</li>
-<li>中风险（天弘永利等债基）：20%</li>
+<li>中风险（天弘永利债基，交银优势等稳健基金）：20%</li>
 <li>高风险（热门板块股票型基金）：79%</li>
 </ul>
+<p>而出现以下几种情况时，我会更频繁关注，并考虑是否加仓或减仓：</p>
+<ul>
+<li>天弘永利债基一周内总净值低于-1%， 加仓</li>
+<li>交银优势行业混合一周内总净值低于-2%， 加仓</li>
+<li>交银优势行业混合一个月总净值超过4%， 减仓</li>
+<li>消费医疗新能源板块股票型基金 一年内总净值超过50%，半年内在-20%和15%之间振荡，不买或小额度肉眼观望</li>
+<li>军工类基金一个月内总净值低于-10%，买入，一个月内总净值高于10%，卖出</li>
+</ul>
+<p>解释下原因：</p>
+<ul>
+<li>天弘永利， 交银优势行业这类中风险基金看重基金经理的抗风险能力，好的基金半年区间内收益肯定是正的，所以不用太看重波段，一周内涨的有点多就减仓，一周内跌了就加仓我认为是不错的交易策略。</li>
+<li>消费、医疗、新能源这种常规板块基金，和生活比较贴近，一般一年内会有其中一个成为涨幅较高的热门板块，所以我认为如果其中一个基金去年涨幅太多，今年大概率横盘，年末暴跌，或者去年萎靡不振，今年抄底大概率能盈利。</li>
+<li>军工类基金有明显的波段，所以观察区间需要缩减至一个月，上个月涨这个月卖，上个月跌我就买。</li>
+</ul>
+<p>整体的策略核心依据的主要是抄底，这是种非常稳健的交易策略，不只我这么想，李嘉诚也这么想。</p>
+<h3 id="我能否用机器代替我的分析过程">我能否用机器代替我的分析过程？</h3>
+<p>发现了吗？我列出来的交易策略有很明显的可配置可编程特征，试着抽象成yaml格式：</p>
+<p><code>code</code>: 基金编号</p>
+<p><code>period</code>: 前n天</p>
+<p><code>value</code>: 总净值</p>
+<p><code>valueMax</code>: 总净值区间上限</p>
+<p><code>valueMin</code>: 总净值区间下限</p>
+<p><code>msg</code>: 消息提醒</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">code</span><span class="p">:</span><span class="w"> </span><span class="m">420102</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">period</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span><span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span>-<span class="m">1</span><span class="w">
+</span><span class="w">    </span><span class="nt">msg</span><span class="p">:</span><span class="w"> </span><span class="l">天弘永利债券基金一周内跌幅超过1个点，记得加仓哟</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">code</span><span class="p">:</span><span class="w"> </span><span class="m">519697</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">period</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span><span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span>-<span class="m">2</span><span class="w">
+</span><span class="w">    </span><span class="nt">msg</span><span class="p">:</span><span class="w"> </span><span class="l">交银优势行业混合一周内跌幅超过2个点，记得加仓哟</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">period</span><span class="p">:</span><span class="w"> </span><span class="m">22</span><span class="w">
+</span><span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
+</span><span class="w">    </span><span class="nt">msg</span><span class="p">:</span><span class="w"> </span><span class="l">交银优势行业混合一个月内涨幅超过4个点，记得减仓哟</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">code</span><span class="p">:</span><span class="w"> </span><span class="m">400015</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">period</span><span class="p">:</span><span class="w"> </span><span class="m">250</span><span class="w">
+</span><span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="m">50</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">period</span><span class="p">:</span><span class="w"> </span><span class="m">125</span><span class="w">
+</span><span class="w">    </span><span class="nt">valueMin</span><span class="p">:</span><span class="w"> </span>-<span class="m">20</span><span class="w">
+</span><span class="w">    </span><span class="nt">valueMax</span><span class="p">:</span><span class="w"> </span><span class="m">15</span><span class="w">
+</span><span class="w">  </span><span class="nt">msg</span><span class="p">:</span><span class="w"> </span><span class="l">东方新能源汽车主题混合去年涨幅超过50%，半年内在负20个点和15个点之间振荡，先别买入哟</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">code</span><span class="p">:</span><span class="w"> </span><span class="m">164402</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">period</span><span class="p">:</span><span class="w"> </span><span class="m">22</span><span class="w">
+</span><span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span>-<span class="m">10</span><span class="w">
+</span><span class="w">    </span><span class="nt">msg</span><span class="p">:</span><span class="w"> </span><span class="l">前海开源中航军工指数一个月内跌了10个点，建议买入哟</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">period</span><span class="p">:</span><span class="w"> </span><span class="m">22</span><span class="w">
+</span><span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="w">    </span><span class="nt">msg</span><span class="p">:</span><span class="w"> </span><span class="l">前海开源中航军工指数一个月内涨了10个点，建议卖出哟</span><span class="w">
+</span></code></pre></div><h3 id="实现它还缺点什么">实现它还缺点什么</h3>
+<ul>
+<li>可以获取基金任意一天净值的网站</li>
+<li>通知渠道（微信公众号 or QQ机器人 or 邮箱？）</li>
+<li>时间</li>
+</ul>
+<p>有一些类似的开源项目或许能提供类似天天基金的api信息，比较难挑的是通知渠道，我有个微信公众号长时间没用被冻住了，QQ机器人和邮箱自动触发消息通知的法子也没接触过，三个方式难度相当，最后本着开源共享精神决定选用微信公众号，如果好友能一起通过我这个微信公众号配置自己的交易策略，还挺有意义的。</p>
+<p>最近上班是真的闲，规划的一天的活一上午就做完了，那么抓紧这段时间，开工吧！</p>
+<h3 id="成果">成果</h3>
+<p>wait&hellip;&hellip;</p>
 
 </section>
 
@@ -648,7 +710,10 @@ b站上也有视频，感兴趣的看看：
       <ol>
         <li><a href="#我应该怎么分配资金">我应该怎么分配资金？</a></li>
         <li><a href="#也许要减少关注基金涨跌带来的精力消耗了">也许要减少关注基金涨跌带来的精力消耗了</a></li>
-        <li><a href="#注意力分配">注意力分配</a></li>
+        <li><a href="#注意力分配--关注点">注意力分配 &amp;&amp; 关注点</a></li>
+        <li><a href="#我能否用机器代替我的分析过程">我能否用机器代替我的分析过程？</a></li>
+        <li><a href="#实现它还缺点什么">实现它还缺点什么</a></li>
+        <li><a href="#成果">成果</a></li>
       </ol>
     </li>
   </ol>
