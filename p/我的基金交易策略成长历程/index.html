@@ -469,12 +469,6 @@ b站上也有视频，感兴趣的看看：
 <p>整体的策略核心依据的主要是抄底，这是种非常稳健的交易策略，不只我这么想，李嘉诚也这么想。</p>
 <h3 id="我能否用机器代替我的分析过程">我能否用机器代替我的分析过程？</h3>
 <p>发现了吗？我列出来的交易策略有很明显的可配置可编程特征，试着抽象成yaml格式：</p>
-<p><code>code</code>: 基金编号</p>
-<p><code>period</code>: 前n天</p>
-<p><code>value</code>: 总净值</p>
-<p><code>valueMax</code>: 总净值区间上限</p>
-<p><code>valueMin</code>: 总净值区间下限</p>
-<p><code>msg</code>: 消息提醒</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">code</span><span class="p">:</span><span class="w"> </span><span class="m">420102</span><span class="w">
 </span><span class="w">  </span>- <span class="nt">period</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
 </span><span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span>-<span class="m">1</span><span class="w">
@@ -503,13 +497,20 @@ b站上也有视频，感兴趣的看看：
 </span><span class="w">  </span>- <span class="nt">period</span><span class="p">:</span><span class="w"> </span><span class="m">22</span><span class="w">
 </span><span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
 </span><span class="w">    </span><span class="nt">msg</span><span class="p">:</span><span class="w"> </span><span class="l">前海开源中航军工指数一个月内涨了10个点，建议卖出哟</span><span class="w">
-</span></code></pre></div><h3 id="实现它还缺点什么">实现它还缺点什么</h3>
+</span></code></pre></div><p><code>code</code>: 基金编号</p>
+<p><code>period</code>: 前n天</p>
+<p><code>value</code>: 总净值</p>
+<p><code>valueMax</code>: 总净值区间上限</p>
+<p><code>valueMin</code>: 总净值区间下限</p>
+<p><code>msg</code>: 消息提醒</p>
+<p>这只是描述我的交易策略的一种方式，问题是如何实现出来？</p>
+<h3 id="实现它还缺点什么">实现它还缺点什么</h3>
 <ul>
 <li>可以获取基金任意一天净值的网站</li>
 <li>通知渠道（微信公众号 or QQ机器人 or 邮箱？）</li>
 <li>时间</li>
 </ul>
-<p>有一些类似的开源项目或许能提供类似天天基金的api信息，比较难挑的是通知渠道，我有个微信公众号长时间没用被冻住了，QQ机器人和邮箱自动触发消息通知的法子也没接触过，三个方式难度相当，最后本着开源共享精神决定选用微信公众号，如果好友能一起通过我这个微信公众号配置自己的交易策略，还挺有意义的。</p>
+<p>有一些类似的开源项目或许能提供类似天天基金的api信息。比较难挑的是通知渠道，我有个微信公众号长时间没用被冻住了，QQ机器人和邮箱自动触发消息通知的法子也没接触过，三个方式难度相当，最后本着开源共享精神决定选用微信公众号，如果好友能一起通过我这个微信公众号配置自己的交易策略，还挺有意义的。</p>
 <p>最近上班是真的闲，规划的一天的活一上午就做完了，那么抓紧这段时间，开工吧！</p>
 <h3 id="成果">成果</h3>
 <p>wait&hellip;&hellip;</p>
