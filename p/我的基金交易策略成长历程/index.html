@@ -458,7 +458,7 @@ b站上也有视频，感兴趣的看看：
 <li>交银优势行业混合一周内总涨幅低于-2%， 加仓</li>
 <li>交银优势行业混合一个月总涨幅超过4%， 减仓</li>
 <li>消费医疗新能源板块股票型基金 一年内总涨幅超过50%，半年内在-20%和15%之间振荡，不买或小额度肉眼观望</li>
-<li>军工类基金一个月内总涨幅低于-10%，买入，一个月内总净值高于10%，卖出</li>
+<li>军工类基金一个月内总涨幅低于-10%，买入，一个月内总涨幅高于10%，卖出</li>
 </ul>
 <p>解释下原因：</p>
 <ul>
@@ -497,16 +497,10 @@ b站上也有视频，感兴趣的看看：
 </span><span class="w">  </span>- <span class="nt">period</span><span class="p">:</span><span class="w"> </span><span class="m">22</span><span class="w">
 </span><span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
 </span><span class="w">    </span><span class="nt">msg</span><span class="p">:</span><span class="w"> </span><span class="l">前海开源中航军工指数一个月内涨了10个点，建议卖出哟</span><span class="w">
-</span></code></pre></div><p><code>code</code>: 基金编号</p>
-<p><code>period</code>: 前n天</p>
-<p><code>value</code>: 总净值</p>
-<p><code>valueMax</code>: 总净值区间上限</p>
-<p><code>valueMin</code>: 总净值区间下限</p>
-<p><code>msg</code>: 消息提醒</p>
-<p>这只是描述我的交易策略的一种方式，问题是如何实现出来？</p>
+</span></code></pre></div><p>这只是描述我的交易策略的一种方式，问题是如何实现出来？</p>
 <h3 id="实现它还缺点什么">实现它还缺点什么</h3>
 <ul>
-<li>可以获取基金任意一天净值的网站</li>
+<li>可以获取基金任意范围天数的涨幅的网站</li>
 <li>通知渠道（微信公众号 or QQ机器人 or 邮箱？）</li>
 <li>触发计算的机制</li>
 <li>时间</li>
