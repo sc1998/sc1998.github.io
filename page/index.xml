@@ -6,7 +6,20 @@
     <description>Recent content in Pages on shank&#39;s life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://life.shankisme.com/page/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://life.shankisme.com/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://life.shankisme.com/about/</link>
+      <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://life.shankisme.com/about/</guid>
+      <description>一个在不断寻找自我价值和存在意义的普通人。
+ 我本楚狂人，凤歌笑孔丘。
+手持绿玉杖，朝别黄鹤楼。
+五岳寻仙不辞远，一生好入名山游。
+ </description>
+    </item>
+    
     <item>
       <title>Archives</title>
       <link>https://life.shankisme.com/archives/</link>
@@ -14,17 +27,6 @@
       
       <guid>https://life.shankisme.com/archives/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://life.shankisme.com/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://life.shankisme.com/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
- https://github.</description>
     </item>
     
     <item>
